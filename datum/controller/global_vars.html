@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;controller&#x2F;global_vars - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/controller/global_vars.html#var">Var Details</a></header>
+<main>
+<h1>global_vars <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/global_vars.html">controller/global_vars</a></aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/controllers/globals.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;globals.dm 3"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/admin_state">admin_state</a></th><td>tgui state: admin_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/all_req_access">all_req_access</a></th><td>Dictionary of all req_access lists.</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/all_req_one_access">all_req_one_access</a></th><td>Dictionary of all one_req_access lists.</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/always_state">always_state</a></th><td>tgui state: always_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/apcs_list">apcs_list</a></th><td>list of all /datum/reagent datums instances indexed by reagent typepath. Used by chemistry stuff</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/areas_by_type">areas_by_type</a></th><td>An association from typepath to area instance. Only includes areas with <code>unique</code> set.</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/balance">balance</a></th><td></td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/chemical_reactions_list">chemical_reactions_list</a></th><td>list of all /datum/reagent indexed by path, with the value being their catalysts and reactions</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/chemical_reagents_list">chemical_reagents_list</a></th><td>list of all /datum/chemical_reaction datums index by reactants, Used during chemical reactions</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/conscious_state">conscious_state</a></th><td>tgui state: conscious_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/contained_state">contained_state</a></th><td>tgui state: contained_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/deep_inventory_state">deep_inventory_state</a></th><td>tgui state: deep_inventory_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/default_state">default_state</a></th><td>tgui state: default_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/dropship_lzs">dropship_lzs</a></th><td>For remote construction of FOB using a computer on the ship during setup phase</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/hands_state">hands_state</a></th><td>tgui state: hands_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/human_adjacent_state">human_adjacent_state</a></th><td>tgui state: human_adjacent_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/iconCache">iconCache</a></th><td>For the main html chat area</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/inventory_state">inventory_state</a></th><td>tgui state: inventory_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/not_incapacitated_state">not_incapacitated_state</a></th><td>tgui state: not_incapacitated_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/not_incapacitated_turf_state">not_incapacitated_turf_state</a></th><td>tgui state: not_incapacitated_turf_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/notcontained_state">notcontained_state</a></th><td>tgui state: notcontained_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/observer_state">observer_state</a></th><td>tgui state: observer_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/physical_state">physical_state</a></th><td>tgui state: physical_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/self_state">self_state</a></th><td>tgui state: self_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/xeno_state">xeno_state</a></th><td>tgui state: xeno_state</td></tr>
+            <tr><th><a href="datum/controller/global_vars.html#var/z_state">z_state</a></th><td>tgui state: z_state</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/admin_state"><aside class="declaration">var </aside>admin_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/admin_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/admin.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;admin.dm 7"/></a></h3>
+        <p>tgui state: admin_state</p>
+<p>Checks that the user is an admin, end-of-story.</p><h3 id="var/all_req_access"><aside class="declaration">var </aside>all_req_access
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/__DEFINES/access.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;access.dm 2"/></a></h3>
+        <p>Dictionary of all req_access lists.</p><h3 id="var/all_req_one_access"><aside class="declaration">var </aside>all_req_one_access
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/__DEFINES/access.dm#L4">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;access.dm 4"/></a></h3>
+        <p>Dictionary of all one_req_access lists.</p><h3 id="var/always_state"><aside class="declaration">var </aside>always_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/always_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/always.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;always.dm 8"/></a></h3>
+        <p>tgui state: always_state</p>
+<p>Always grants the user UI_INTERACTIVE. Period.</p><h3 id="var/apcs_list"><aside class="declaration">var </aside>apcs_list
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/_globalvars/lists/objects.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;_globalvars&#x2F;lists&#x2F;objects.dm 33"/></a></h3>
+        <p>list of all /datum/reagent datums instances indexed by reagent typepath. Used by chemistry stuff</p><h3 id="var/areas_by_type"><aside class="declaration">var </aside>areas_by_type
+            <aside>&ndash; /static/list/area</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/_globalvars/lists/mapping.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;_globalvars&#x2F;lists&#x2F;mapping.dm 36"/></a></h3>
+        <p>An association from typepath to area instance. Only includes areas with <code>unique</code> set.</p><h3 id="var/balance"><aside class="declaration">var </aside>balance
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/balance</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/datums/balance.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;balance.dm 6"/></a></h3>
+        <ul>
+<li>Balance datum</li>
+</ul>
+<p>This is for tracking and storing balance values that are automatically added to the database on edit.</p><h3 id="var/chemical_reactions_list"><aside class="declaration">var </aside>chemical_reactions_list
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/_globalvars/lists/objects.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;_globalvars&#x2F;lists&#x2F;objects.dm 30"/></a></h3>
+        <p>list of all /datum/reagent indexed by path, with the value being their catalysts and reactions</p><h3 id="var/chemical_reagents_list"><aside class="declaration">var </aside>chemical_reagents_list
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/_globalvars/lists/objects.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;_globalvars&#x2F;lists&#x2F;objects.dm 31"/></a></h3>
+        <p>list of all /datum/chemical_reaction datums index by reactants, Used during chemical reactions</p><h3 id="var/conscious_state"><aside class="declaration">var </aside>conscious_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/conscious_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/conscious.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;conscious.dm 7"/></a></h3>
+        <p>tgui state: conscious_state</p>
+<p>Only checks if the user is conscious.</p><h3 id="var/contained_state"><aside class="declaration">var </aside>contained_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/contained_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/contained.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;contained.dm 7"/></a></h3>
+        <p>tgui state: contained_state</p>
+<p>Checks that the user is inside the src_object.</p><h3 id="var/deep_inventory_state"><aside class="declaration">var </aside>deep_inventory_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/deep_inventory_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/deep_inventory.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;deep_inventory.dm 7"/></a></h3>
+        <p>tgui state: deep_inventory_state</p>
+<p>Checks that the src_object is in the user's deep (backpack, box, toolbox, etc) inventory.</p><h3 id="var/default_state"><aside class="declaration">var </aside>default_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/default</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/default.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;default.dm 7"/></a></h3>
+        <p>tgui state: default_state</p>
+<p>Checks a number of things -- mostly physical distance for humans and view for robots.</p><h3 id="var/dropship_lzs"><aside class="declaration">var </aside>dropship_lzs
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/mining/remote_fob/remote_fob_fobdrone.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mining&#x2F;remote_fob&#x2F;remote_fob_fobdrone.dm 2"/></a></h3>
+        <p>For remote construction of FOB using a computer on the ship during setup phase</p><h3 id="var/hands_state"><aside class="declaration">var </aside>hands_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/hands_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/hands.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;hands.dm 7"/></a></h3>
+        <p>tgui state: hands_state</p>
+<p>Checks that the src_object is in the user's hands.</p><h3 id="var/human_adjacent_state"><aside class="declaration">var </aside>human_adjacent_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/human_adjacent_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/human_adjacent.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;human_adjacent.dm 9"/></a></h3>
+        <p>tgui state: human_adjacent_state</p>
+<p>In addition to default checks, only allows interaction for a
+human adjacent user.</p><h3 id="var/iconCache"><aside class="declaration">var </aside>iconCache
+            <aside>&ndash; /static/savefile</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/goonchat/browserOutput.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;goonchat&#x2F;browserOutput.dm 6"/></a></h3>
+        <p>For the main html chat area</p><h3 id="var/inventory_state"><aside class="declaration">var </aside>inventory_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/inventory_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/inventory.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;inventory.dm 7"/></a></h3>
+        <p>tgui state: inventory_state</p>
+<p>Checks that the src_object is in the user's top-level (hand, ear, pocket, belt, etc) inventory.</p><h3 id="var/not_incapacitated_state"><aside class="declaration">var </aside>not_incapacitated_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/not_incapacitated_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/not_incapacitated.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;not_incapacitated.dm 7"/></a></h3>
+        <p>tgui state: not_incapacitated_state</p>
+<p>Checks that the user isn't incapacitated</p><h3 id="var/not_incapacitated_turf_state"><aside class="declaration">var </aside>not_incapacitated_turf_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/not_incapacitated_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/not_incapacitated.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;not_incapacitated.dm 15"/></a></h3>
+        <p>tgui state: not_incapacitated_turf_state</p>
+<p>Checks that the user isn't incapacitated and that their loc is a turf</p><h3 id="var/notcontained_state"><aside class="declaration">var </aside>notcontained_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/notcontained_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/notcontained.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;notcontained.dm 7"/></a></h3>
+        <p>tgui state: notcontained_state</p>
+<p>Checks that the user is not inside src_object, and then makes the default checks.</p><h3 id="var/observer_state"><aside class="declaration">var </aside>observer_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/observer_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/observer.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;observer.dm 7"/></a></h3>
+        <p>tgui state: observer_state</p>
+<p>Checks that the user is an observer/ghost.</p><h3 id="var/physical_state"><aside class="declaration">var </aside>physical_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/physical</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/physical.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;physical.dm 7"/></a></h3>
+        <p>tgui state: physical_state</p>
+<p>Short-circuits the default state to only check physical distance.</p><h3 id="var/self_state"><aside class="declaration">var </aside>self_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/self_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/self.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;self.dm 7"/></a></h3>
+        <p>tgui state: self_state</p>
+<p>Only checks that the user and src_object are the same.</p><h3 id="var/xeno_state"><aside class="declaration">var </aside>xeno_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/xeno_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/xeno.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;xeno.dm 7"/></a></h3>
+        <p>tgui state: xeno_state</p>
+<p>Checks that the user is a xeno, ezpz.</p><h3 id="var/z_state"><aside class="declaration">var </aside>z_state
+            <aside>&ndash; /static/<a href="datum.html">datum</a>/<a href="datum/ui_state.html">ui_state</a>/z_state</aside>
+        
+    
+            <a href="https://github.com/tgstation/TerraGov-Marine-Corps/blob/2344715a1d9af8bd74ca9f8e9891fb381c6778a9/code/modules/tgui/states/zlevel.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;tgui&#x2F;states&#x2F;zlevel.dm 7"/></a></h3>
+        <p>tgui state: z_state</p>
+<p>Only checks that the Z-level of the user and src_object are the same.</p></main>
+<footer>
+    tgmc.dme
+    <a href="https://github.com/tgstation/TerraGov-Marine-Corps/tree/2344715a1d9af8bd74ca9f8e9891fb381c6778a9">2344715</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.2</a></footer>
+</body>
+</html>
